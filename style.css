@@ -1,0 +1,180 @@
+/* Atur tinggi html dan body agar footer tetap di bawah */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF0D1;
+    font-family: Arial, sans-serif;
+}
+
+/* Style untuk header */
+header {
+    background-color: #795757;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #FFF0D1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF0D1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3B3030;
+}
+
+/* Main content harus fleksibel agar footer tetap di bawah */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+article {
+    background-color: #FFF0D1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #795757;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1;
+    background-color: #E0E0E0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #3B3030;
+    color: #FFF0D1;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 16px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+footer a {
+    color: #FFF0D1;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #FFBF00;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Style untuk gambar profil pada halaman "Tentang Saya" */
+.profile-picture {
+    width: 300px;
+    height: auto;
+    border: 5px solid #664343; /* Bingkai di sekitar foto dengan warna */
+    border-radius: 10px; /* Membuat sudut foto sedikit melengkung */
+    display: block;
+    margin: 0 auto 20px auto; /* Memposisikan foto di tengah */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan */
+}
+/* Style untuk dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tombol dropdown */
+.dropbtn {
+    background-color: #795757;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Konten dropdown (list) */
+.dropdown-content {
+    display: none; /* Disembunyikan awalnya */
+    position: absolute;
+    background-color: #FFF0D1;
+    min-width: 160px; /* Atur lebar minimum untuk dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    z-index: 1;
+}
+
+/* Tampilan link dalam dropdown */
+.dropdown-content a {
+    color: #3B3030;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* Menampilkan sebagai block untuk membentuk kolom */
+}
+
+/* Efek hover di link */
+.dropdown-content a:hover {
+    background-color: #664343;
+    color: #FFF0D1;
+}
+
+/* Menampilkan dropdown saat hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ubah warna tombol saat hover */
+.dropdown:hover .dropbtn {
+    background-color: #664343;
+}
